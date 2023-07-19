@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-#create Layout
+#criar Layout
 def create_task_manager():
     sg.theme('Reddit')
     linha = [
@@ -11,9 +11,9 @@ def create_task_manager():
         [sg.Button('new task'), sg.Button('reset')]
     ]
     return sg.Window('task menager', layout=layout,finalize=True)
-#create window
+#criar janela
 window = create_task_manager()
-#window rules
+#regras da janela
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
